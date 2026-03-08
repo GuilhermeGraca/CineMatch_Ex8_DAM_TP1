@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Stitch Theme Colors -->
+    <!-- Stitch Theme Colors (Cinematic Dark) -->
+    <!-- Primary: #e60a11 -->
+    <color name="md_theme_primary">#e60a11</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#FFF0F1</color>
+    <color name="md_theme_onPrimaryContainer">#3D0001</color>
+
+    <!-- Background Dark: #160A0A for true darkness instead of light -->
+    <color name="md_theme_background">#100505</color>
+    <color name="md_theme_onBackground">#f8f5f6</color>
+    <color name="md_theme_surface">#1A0C0C</color>
+    <color name="md_theme_onSurface">#f8f5f6</color>
+
+    <!-- Generic Secondary/Error fallbacks -->
+    <color name="md_theme_secondary">#8C819C</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#E8DEF8</color>
+    <color name="md_theme_onSecondaryContainer">#1D192B</color>
+    <color name="md_theme_error">#FFB4AB</color>
+    <color name="md_theme_onError">#690005</color>
+</resources>
