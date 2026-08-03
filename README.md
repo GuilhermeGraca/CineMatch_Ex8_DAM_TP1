@@ -40,12 +40,23 @@ A aplicação segue estritamente o padrão de arquitetura **MVVM (Model-View-Vie
   - Teste de persistência (guardar um filme no ecrã de Detalhes, voltar ao ecrã inicial e abrir a Watchlist para confirmar a atualização quase instantânea via Kotlin Flow).
 - **Limitações Conhecidas**: A API OMDb restringe as pesquisas estritamente pelo título (parâmetro `s`), o que torna a pesquisa genérica por géneros menos eficaz. Resolvemos esta limitação implementando um campo de texto livre de "fallback" (pesquisa livre) e gerindo múltiplos updates com uma pseudo-paginação aleatória ("Refresh").
 
-## 6. Usage Instructions
-1. Clonar o repositório e abri-lo no Android Studio.
-2. Na raiz do projeto, localizar ou criar o ficheiro `local.properties`.
-3. Adicionar uma chave de API válida do OMDb da seguinte forma: `OMDB_API_KEY="a_tua_chave_api_aqui"`.
-4. Sincronizar os ficheiros de build do Gradle (assegurar as configurações do plugin KSP).
-5. Fazer o Build ('assembleDebug') e executar a aplicação num Emulador Android ou Dispositivo Físico compatível.
+## 6. Usage Instructions (Como Executar o Projeto)
+1. **Clonar o repositório:**
+   - *Nota para Windows:* Se ocorrer um erro de `Filename too long` ao clonar, executa no terminal:
+     ```bash
+     git config --global core.longpaths true
+     ```
+2. **Abrir no Android Studio & Configurar o JDK (Java 17 / 21):**
+   - O projeto utiliza o **Gradle 8.7** (estável). Certifica-te de que o Android Studio está configurado para usar o **JDK 17** ou **JDK 21** em:  
+     `File > Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JDK` (por exemplo, `jbr-17`, `jbr-21` ou `corretto-17`).
+3. **Chave de API do OMDb (`local.properties`):**
+   - Na raiz do projeto, cria ou edita o ficheiro `local.properties` e adiciona a tua chave da API OMDb:
+     ```properties
+     OMDB_API_KEY="a_tua_chave_api_aqui"
+     ```
+4. **Sincronizar e Executar:**
+   - Clica em **Sync Project with Gradle Files** (ícone do elefante no topo do Android Studio).
+   - Executa a aplicação (`Run 'app'` ou `./gradlew assembleDebug`) num Emulador Android ou Dispositivo Físico compatível.
 
 ---
 # Autonomous Software Engineering Sections - only for [AC OK, AI OK] sections

@@ -9,6 +9,8 @@
 /.idea/assetWizardSettings.xml
 /.idea/deploymentTargetSelector.xml
 /.idea/deviceManager.xml
+/.idea/markdown.xml
+/.idea/jarRepositories.xml
 .DS_Store
 /build
 /app/build
